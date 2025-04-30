@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/praja/Desktop/cloudinary-saas/app/%28app%29/home/page.tsx"],"sourcesContent":["\"use client\"\r\n\r\nimport React, {useState, useEffect, useCallback} from 'react'\r\nimport axios from 'axios'\r\nimport VideoCard from '@/components/VideoCard'\r\n\r\nfunction Home() {\r\n  const [videos, setVideos] = useState([])\r\n  const [loading, setLoading] = useState(true)\r\n  const [error, setError] = useState(null)\r\n\r\n\r\n  const fetchVideos = useCallback(async () => {\r\n    try{\r\n      \r\n    }\r\n  }, [])\r\n\r\n  return (\r\n    <div>Home</div>\r\n  )\r\n}\r\n\r\nexport default Home"],"names":[],"mappings":";;;;AAEA;AAFA;;;AAMA,SAAS;IACP,MAAM,CAAC,QAAQ,UAAU,GAAG,CAAA,GAAA,qMAAA,CAAA,WAAQ,AAAD,EAAE,EAAE;IACvC,MAAM,CAAC,SAAS,WAAW,GAAG,CAAA,GAAA,qMAAA,CAAA,WAAQ,AAAD,EAAE;IACvC,MAAM,CAAC,OAAO,SAAS,GAAG,CAAA,GAAA,qMAAA,CAAA,WAAQ,AAAD,EAAE;IAGnC,MAAM,cAAc,CAAA,GAAA,qMAAA,CAAA,cAAW,AAAD,EAAE;QAC9B,IAAG,CAEH;IACF,GAAG,EAAE;IAEL,qBACE,8OAAC;kBAAI;;;;;;AAET;uCAEe","debugId":null}}]
+}

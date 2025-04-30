@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 68, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/praja/Desktop/cloudinary-saas/app/api/videos/route.ts"],"sourcesContent":["import {NextRequest, NextResponse} from \"next/server\"\r\nimport { PrismaClient } from \"@prisma/client/extension\" \r\n\r\nconst prisma = new PrismaClient()\r\n\r\nexport async function GET(request: NextRequest){\r\n    try{\r\n        const videos = await prisma.video.findMany({\r\n            orderBy: {createdAt: \"desc\"},\r\n        })\r\n        return NextResponse.json(videos)\r\n    }catch(error){\r\n        return NextResponse.json({error: \"Failed to fetch videos\"}, {status: 500})\r\n    }finally{\r\n        await prisma.$disconnect()\r\n    }\r\n}"],"names":[],"mappings":";;;AAAA;AACA;;;AAEA,MAAM,SAAS,IAAI,uJAAA,CAAA,eAAY;AAExB,eAAe,IAAI,OAAoB;IAC1C,IAAG;QACC,MAAM,SAAS,MAAM,OAAO,KAAK,CAAC,QAAQ,CAAC;YACvC,SAAS;gBAAC,WAAW;YAAM;QAC/B;QACA,OAAO,gIAAA,CAAA,eAAY,CAAC,IAAI,CAAC;IAC7B,EAAC,OAAM,OAAM;QACT,OAAO,gIAAA,CAAA,eAAY,CAAC,IAAI,CAAC;YAAC,OAAO;QAAwB,GAAG;YAAC,QAAQ;QAAG;IAC5E,SAAQ;QACJ,MAAM,OAAO,WAAW;IAC5B;AACJ","debugId":null}}]
+}
